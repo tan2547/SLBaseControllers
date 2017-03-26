@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SLController : UIViewController
+@protocol SLControllerLiftCircle<NSObject>
 
+@optional
 /**
  *  准备子视图
  */
@@ -19,5 +20,9 @@
  *  准备布局数据
  */
 - (void)sl_prepareLayoutArray;
+
+@end
+
+@interface SLController : UIViewController<SLControllerLiftCircle>
 
 @end

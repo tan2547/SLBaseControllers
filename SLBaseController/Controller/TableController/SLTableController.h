@@ -8,7 +8,8 @@
 
 #import "SLController.h"
 #import "SLTableCell.h"
-@interface SLTableController : SLController
+#import "UIViewController+test.h"
+@interface SLTableController : SLController<UITableViewDelegate,UITableViewDataSource>
 
 #pragma mark - 属性
 
@@ -24,7 +25,7 @@
 #pragma mark - 方法
 
 - (NSArray<NSString*> *)sl_registerCell;
-- (UITableViewStyle *)sl_styleOfTable;
+- (UITableViewStyle)sl_styleOfTable;
 - (UIView *)sl_headerView;
 - (UIView *)sl_footerView;
 - (NSString *)sl_reuseIdentiferAtIndexPath:(NSIndexPath *)indexPath;

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4AE04BC11E87ACD600294DCE /* SLTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE04BC01E87ACD600294DCE /* SLTestController.m */; };
+		4AE04BC41E87B26D00294DCE /* UIViewController+test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE04BC31E87B26D00294DCE /* UIViewController+test.m */; };
 		4AF1F5CC1E8799EA00E6A584 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF1F5C21E8799EA00E6A584 /* AppDelegate.m */; };
 		4AF1F5CD1E8799EA00E6A584 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AF1F5C31E8799EA00E6A584 /* Assets.xcassets */; };
 		4AF1F5CE1E8799EA00E6A584 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AF1F5C41E8799EA00E6A584 /* LaunchScreen.storyboard */; };
@@ -22,6 +23,8 @@
 		4AC64E0E1E878A0C00C140D0 /* SLBaseController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLBaseController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE04BBF1E87ACD600294DCE /* SLTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLTestController.h; sourceTree = "<group>"; };
 		4AE04BC01E87ACD600294DCE /* SLTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLTestController.m; sourceTree = "<group>"; };
+		4AE04BC21E87B26D00294DCE /* UIViewController+test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+test.h"; sourceTree = "<group>"; };
+		4AE04BC31E87B26D00294DCE /* UIViewController+test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+test.m"; sourceTree = "<group>"; };
 		4AF1F5C11E8799EA00E6A584 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4AF1F5C21E8799EA00E6A584 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4AF1F5C31E8799EA00E6A584 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +86,8 @@
 				4AF1F5C21E8799EA00E6A584 /* AppDelegate.m */,
 				4AE04BBF1E87ACD600294DCE /* SLTestController.h */,
 				4AE04BC01E87ACD600294DCE /* SLTestController.m */,
+				4AE04BC21E87B26D00294DCE /* UIViewController+test.h */,
+				4AE04BC31E87B26D00294DCE /* UIViewController+test.m */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AE04BC41E87B26D00294DCE /* UIViewController+test.m in Sources */,
 				4AF1F5F11E879BDF00E6A584 /* SLTableCell.m in Sources */,
 				4AF1F5EB1E879A7400E6A584 /* SLController.m in Sources */,
 				4AF1F5EE1E879A8500E6A584 /* SLTableController.m in Sources */,

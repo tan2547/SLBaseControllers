@@ -17,7 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
         
 }
 
@@ -26,6 +25,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)sl_prepareSubView{
+    [self setupTableView];
+}
 
+- (void)setupTableView{
+    UITableViewStyle style = UITableViewStyleGrouped;
+    if ([self respondsToSelector:@selector(sl_styleOfTable)]) {
+        style = [self sl_styleOfTable];
+    }
+    UITableView *tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:style];
+    tableView.delegate = self;
+    tableView.dataSource = self;
+}
 
 @end
