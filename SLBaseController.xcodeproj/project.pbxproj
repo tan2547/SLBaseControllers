@@ -21,23 +21,22 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		4AE04BC11E87ACD600294DCE /* SLTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE04BC01E87ACD600294DCE /* SLTestController.m */; };
-		4AE04BC41E87B26D00294DCE /* UIViewController+test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE04BC31E87B26D00294DCE /* UIViewController+test.m */; };
-		4AE04BC91E87B5FB00294DCE /* SLTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE04BC81E87B5FB00294DCE /* SLTableController.m */; };
 		4AE04BD31E87C04A00294DCE /* SLControllers.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE04BD11E87C04A00294DCE /* SLControllers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4AE04BD61E87C04A00294DCE /* SLControllers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE04BCF1E87C04A00294DCE /* SLControllers.framework */; };
 		4AE04BD71E87C04A00294DCE /* SLControllers.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE04BCF1E87C04A00294DCE /* SLControllers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4AE04BDE1E87C21C00294DCE /* SLControllerLifeCircle.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE04BDD1E87C20200294DCE /* SLControllerLifeCircle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4AE04BDF1E87C22000294DCE /* SLTableController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE04BC71E87B5FB00294DCE /* SLTableController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4AE04BE01E87C22400294DCE /* SLTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AF1F5EF1E879BDF00E6A584 /* SLTableCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4AE04BE11E87C24600294DCE /* SLTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE04BC81E87B5FB00294DCE /* SLTableController.m */; };
-		4AE04BE21E87C24900294DCE /* SLTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF1F5F01E879BDF00E6A584 /* SLTableCell.m */; };
+		4AE04BF31E87D0F900294DCE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4AE04BEB1E87D0F900294DCE /* Info.plist */; };
+		4AE04BF41E87D0F900294DCE /* SLControllerLifeCircle.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE04BEC1E87D0F900294DCE /* SLControllerLifeCircle.h */; };
+		4AE04BF51E87D0F900294DCE /* SLControllers.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE04BED1E87D0F900294DCE /* SLControllers.h */; };
+		4AE04BF61E87D0F900294DCE /* SLTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE04BEF1E87D0F900294DCE /* SLTableCell.h */; };
+		4AE04BF71E87D0F900294DCE /* SLTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE04BF01E87D0F900294DCE /* SLTableCell.m */; };
+		4AE04BF81E87D0F900294DCE /* SLTableController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE04BF11E87D0F900294DCE /* SLTableController.h */; };
+		4AE04BF91E87D0F900294DCE /* SLTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE04BF21E87D0F900294DCE /* SLTableController.m */; };
+		4AE04BFC1E87D12200294DCE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE04BFB1E87D12200294DCE /* ViewController.m */; };
 		4AF1F5CC1E8799EA00E6A584 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF1F5C21E8799EA00E6A584 /* AppDelegate.m */; };
 		4AF1F5CD1E8799EA00E6A584 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AF1F5C31E8799EA00E6A584 /* Assets.xcassets */; };
 		4AF1F5CE1E8799EA00E6A584 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AF1F5C41E8799EA00E6A584 /* LaunchScreen.storyboard */; };
 		4AF1F5CF1E8799EA00E6A584 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4AF1F5C81E8799EA00E6A584 /* Info.plist */; };
 		4AF1F5D01E8799EA00E6A584 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF1F5C91E8799EA00E6A584 /* main.m */; };
-		4AF1F5F11E879BDF00E6A584 /* SLTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF1F5F01E879BDF00E6A584 /* SLTableCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,24 +65,24 @@
 
 /* Begin PBXFileReference section */
 		4AC64E0E1E878A0C00C140D0 /* SLBaseController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLBaseController.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AE04BBF1E87ACD600294DCE /* SLTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLTestController.h; sourceTree = "<group>"; };
-		4AE04BC01E87ACD600294DCE /* SLTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLTestController.m; sourceTree = "<group>"; };
-		4AE04BC21E87B26D00294DCE /* UIViewController+test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+test.h"; sourceTree = "<group>"; };
-		4AE04BC31E87B26D00294DCE /* UIViewController+test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+test.m"; sourceTree = "<group>"; };
-		4AE04BC71E87B5FB00294DCE /* SLTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLTableController.h; sourceTree = "<group>"; };
-		4AE04BC81E87B5FB00294DCE /* SLTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLTableController.m; sourceTree = "<group>"; };
 		4AE04BCF1E87C04A00294DCE /* SLControllers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SLControllers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE04BD11E87C04A00294DCE /* SLControllers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLControllers.h; sourceTree = "<group>"; };
 		4AE04BD21E87C04A00294DCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4AE04BDD1E87C20200294DCE /* SLControllerLifeCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLControllerLifeCircle.h; sourceTree = "<group>"; };
+		4AE04BEB1E87D0F900294DCE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AE04BEC1E87D0F900294DCE /* SLControllerLifeCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLControllerLifeCircle.h; sourceTree = "<group>"; };
+		4AE04BED1E87D0F900294DCE /* SLControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLControllers.h; sourceTree = "<group>"; };
+		4AE04BEF1E87D0F900294DCE /* SLTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLTableCell.h; sourceTree = "<group>"; };
+		4AE04BF01E87D0F900294DCE /* SLTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLTableCell.m; sourceTree = "<group>"; };
+		4AE04BF11E87D0F900294DCE /* SLTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLTableController.h; sourceTree = "<group>"; };
+		4AE04BF21E87D0F900294DCE /* SLTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLTableController.m; sourceTree = "<group>"; };
+		4AE04BFA1E87D12200294DCE /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4AE04BFB1E87D12200294DCE /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4AF1F5C11E8799EA00E6A584 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4AF1F5C21E8799EA00E6A584 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4AF1F5C31E8799EA00E6A584 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AF1F5C51E8799EA00E6A584 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4AF1F5C81E8799EA00E6A584 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AF1F5C91E8799EA00E6A584 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4AF1F5EF1E879BDF00E6A584 /* SLTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLTableCell.h; sourceTree = "<group>"; };
-		4AF1F5F01E879BDF00E6A584 /* SLTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLTableCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,16 +125,40 @@
 		4AE04BD01E87C04A00294DCE /* SLControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4AE04BEA1E87D0F900294DCE /* SLControllers */,
 				4AE04BD11E87C04A00294DCE /* SLControllers.h */,
 				4AE04BD21E87C04A00294DCE /* Info.plist */,
 			);
 			path = SLControllers;
 			sourceTree = "<group>";
 		};
+		4AE04BEA1E87D0F900294DCE /* SLControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4AE04BEB1E87D0F900294DCE /* Info.plist */,
+				4AE04BEC1E87D0F900294DCE /* SLControllerLifeCircle.h */,
+				4AE04BED1E87D0F900294DCE /* SLControllers.h */,
+				4AE04BEE1E87D0F900294DCE /* TableController */,
+			);
+			name = SLControllers;
+			sourceTree = "<group>";
+		};
+		4AE04BEE1E87D0F900294DCE /* TableController */ = {
+			isa = PBXGroup;
+			children = (
+				4AE04BEF1E87D0F900294DCE /* SLTableCell.h */,
+				4AE04BF01E87D0F900294DCE /* SLTableCell.m */,
+				4AE04BF11E87D0F900294DCE /* SLTableController.h */,
+				4AE04BF21E87D0F900294DCE /* SLTableController.m */,
+			);
+			path = TableController;
+			sourceTree = "<group>";
+		};
 		4AF1F5BF1E8799EA00E6A584 /* SLBaseController */ = {
 			isa = PBXGroup;
 			children = (
-				4AF1F5C61E8799EA00E6A584 /* Controller */,
+				4AE04BFA1E87D12200294DCE /* ViewController.h */,
+				4AE04BFB1E87D12200294DCE /* ViewController.m */,
 				4AF1F5C01E8799EA00E6A584 /* AppDelegate */,
 				4AF1F5C31E8799EA00E6A584 /* Assets.xcassets */,
 				4AF1F5C41E8799EA00E6A584 /* LaunchScreen.storyboard */,
@@ -150,32 +173,8 @@
 			children = (
 				4AF1F5C11E8799EA00E6A584 /* AppDelegate.h */,
 				4AF1F5C21E8799EA00E6A584 /* AppDelegate.m */,
-				4AE04BBF1E87ACD600294DCE /* SLTestController.h */,
-				4AE04BC01E87ACD600294DCE /* SLTestController.m */,
-				4AE04BC21E87B26D00294DCE /* UIViewController+test.h */,
-				4AE04BC31E87B26D00294DCE /* UIViewController+test.m */,
 			);
 			path = AppDelegate;
-			sourceTree = "<group>";
-		};
-		4AF1F5C61E8799EA00E6A584 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				4AE04BDD1E87C20200294DCE /* SLControllerLifeCircle.h */,
-				4AF1F5EA1E879A7400E6A584 /* TableController */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		4AF1F5EA1E879A7400E6A584 /* TableController */ = {
-			isa = PBXGroup;
-			children = (
-				4AE04BC71E87B5FB00294DCE /* SLTableController.h */,
-				4AE04BC81E87B5FB00294DCE /* SLTableController.m */,
-				4AF1F5EF1E879BDF00E6A584 /* SLTableCell.h */,
-				4AF1F5F01E879BDF00E6A584 /* SLTableCell.m */,
-			);
-			path = TableController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,10 +184,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AE04BF51E87D0F900294DCE /* SLControllers.h in Headers */,
 				4AE04BD31E87C04A00294DCE /* SLControllers.h in Headers */,
-				4AE04BDE1E87C21C00294DCE /* SLControllerLifeCircle.h in Headers */,
-				4AE04BDF1E87C22000294DCE /* SLTableController.h in Headers */,
-				4AE04BE01E87C22400294DCE /* SLTableCell.h in Headers */,
+				4AE04BF81E87D0F900294DCE /* SLTableController.h in Headers */,
+				4AE04BF61E87D0F900294DCE /* SLTableCell.h in Headers */,
+				4AE04BF41E87D0F900294DCE /* SLControllerLifeCircle.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AE04BF31E87D0F900294DCE /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,12 +317,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AE04BC41E87B26D00294DCE /* UIViewController+test.m in Sources */,
-				4AF1F5F11E879BDF00E6A584 /* SLTableCell.m in Sources */,
+				4AE04BFC1E87D12200294DCE /* ViewController.m in Sources */,
 				4AF1F5D01E8799EA00E6A584 /* main.m in Sources */,
-				4AE04BC11E87ACD600294DCE /* SLTestController.m in Sources */,
 				4AF1F5CC1E8799EA00E6A584 /* AppDelegate.m in Sources */,
-				4AE04BC91E87B5FB00294DCE /* SLTableController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,8 +327,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AE04BE11E87C24600294DCE /* SLTableController.m in Sources */,
-				4AE04BE21E87C24900294DCE /* SLTableCell.m in Sources */,
+				4AE04BF71E87D0F900294DCE /* SLTableCell.m in Sources */,
+				4AE04BF91E87D0F900294DCE /* SLTableController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

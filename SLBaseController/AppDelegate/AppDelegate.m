@@ -7,8 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "SLTestController.h"
-
+#import "ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -21,8 +20,9 @@
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];
 
-    SLTestController *vc = [[SLTestController alloc]init];
-    vc.view.backgroundColor = [UIColor whiteColor];
+//    SLTestController *vc = [[SLTestController alloc]init];
+//    vc.view.backgroundColor = [UIColor whiteColor];
+    ViewController *vc = [[ViewController alloc]init];
     [self.window setRootViewController:vc];
     return YES;
 }
