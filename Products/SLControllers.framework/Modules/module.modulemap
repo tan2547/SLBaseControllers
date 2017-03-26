@@ -1,0 +1,6 @@
+framework module SLControllers {
+  umbrella header "SLControllers.h"
+
+  export *
+  module * { export * }
+}
