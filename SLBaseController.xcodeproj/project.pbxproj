@@ -21,17 +21,16 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		4AE04BD31E87C04A00294DCE /* SLControllers.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE04BD11E87C04A00294DCE /* SLControllers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4AE04BD61E87C04A00294DCE /* SLControllers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE04BCF1E87C04A00294DCE /* SLControllers.framework */; };
 		4AE04BD71E87C04A00294DCE /* SLControllers.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE04BCF1E87C04A00294DCE /* SLControllers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4AE04BF31E87D0F900294DCE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4AE04BEB1E87D0F900294DCE /* Info.plist */; };
-		4AE04BF41E87D0F900294DCE /* SLControllerLifeCircle.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE04BEC1E87D0F900294DCE /* SLControllerLifeCircle.h */; };
-		4AE04BF51E87D0F900294DCE /* SLControllers.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE04BED1E87D0F900294DCE /* SLControllers.h */; };
-		4AE04BF61E87D0F900294DCE /* SLTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE04BEF1E87D0F900294DCE /* SLTableCell.h */; };
 		4AE04BF71E87D0F900294DCE /* SLTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE04BF01E87D0F900294DCE /* SLTableCell.m */; };
-		4AE04BF81E87D0F900294DCE /* SLTableController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE04BF11E87D0F900294DCE /* SLTableController.h */; };
 		4AE04BF91E87D0F900294DCE /* SLTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE04BF21E87D0F900294DCE /* SLTableController.m */; };
 		4AE04BFC1E87D12200294DCE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE04BFB1E87D12200294DCE /* ViewController.m */; };
+		4AE04C011E87D4EA00294DCE /* SLControllers.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE04BED1E87D0F900294DCE /* SLControllers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AE04C021E87D4EE00294DCE /* SLControllerLifeCircle.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE04BEC1E87D0F900294DCE /* SLControllerLifeCircle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AE04C031E87D4F100294DCE /* SLTableController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE04BF11E87D0F900294DCE /* SLTableController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AE04C041E87D4F500294DCE /* SLTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE04BEF1E87D0F900294DCE /* SLTableCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4AF1F5CC1E8799EA00E6A584 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF1F5C21E8799EA00E6A584 /* AppDelegate.m */; };
 		4AF1F5CD1E8799EA00E6A584 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AF1F5C31E8799EA00E6A584 /* Assets.xcassets */; };
 		4AF1F5CE1E8799EA00E6A584 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AF1F5C41E8799EA00E6A584 /* LaunchScreen.storyboard */; };
@@ -184,11 +183,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AE04BF51E87D0F900294DCE /* SLControllers.h in Headers */,
-				4AE04BD31E87C04A00294DCE /* SLControllers.h in Headers */,
-				4AE04BF81E87D0F900294DCE /* SLTableController.h in Headers */,
-				4AE04BF61E87D0F900294DCE /* SLTableCell.h in Headers */,
-				4AE04BF41E87D0F900294DCE /* SLControllerLifeCircle.h in Headers */,
+				4AE04C011E87D4EA00294DCE /* SLControllers.h in Headers */,
+				4AE04C021E87D4EE00294DCE /* SLControllerLifeCircle.h in Headers */,
+				4AE04C031E87D4F100294DCE /* SLTableController.h in Headers */,
+				4AE04C041E87D4F500294DCE /* SLTableCell.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
