@@ -15,7 +15,11 @@ FOUNDATION_EXPORT double SLControllersVersionNumber;
 FOUNDATION_EXPORT const unsigned char SLControllersVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <SLControllers/PublicHeader.h>
-#import <SLControllerLifeCircle.h>
-#import <SLTableController.h>
-#import <SLTableCell.h>
+//#import <SLControllerLifeCircle.h>
+//#import <SLTableController.h>
+//#import <SLTableCell.h>
+#import <SLControllers/SLControllerLifeCircle.h>
+#import <SLControllers/SLTableController.h>
+#import <SLControllers/SLTableCell.h>
+
 

@@ -15,7 +15,7 @@
 @implementation SLTableController
 
 - (instancetype)initWithStyle:(UITableViewStyle)style{
-    UITableViewStyle newstyle = style;
+    UITableViewStyle newstyle = UITableViewStyleGrouped;
     if ([self respondsToSelector:@selector(sl_styleOfTable)]) {
         newstyle = [self sl_styleOfTable];
     }
