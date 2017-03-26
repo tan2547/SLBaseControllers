@@ -9,13 +9,12 @@
 /* Begin PBXBuildFile section */
 		4AE04BC11E87ACD600294DCE /* SLTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE04BC01E87ACD600294DCE /* SLTestController.m */; };
 		4AE04BC41E87B26D00294DCE /* UIViewController+test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE04BC31E87B26D00294DCE /* UIViewController+test.m */; };
+		4AE04BC91E87B5FB00294DCE /* SLTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE04BC81E87B5FB00294DCE /* SLTableController.m */; };
 		4AF1F5CC1E8799EA00E6A584 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF1F5C21E8799EA00E6A584 /* AppDelegate.m */; };
 		4AF1F5CD1E8799EA00E6A584 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AF1F5C31E8799EA00E6A584 /* Assets.xcassets */; };
 		4AF1F5CE1E8799EA00E6A584 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AF1F5C41E8799EA00E6A584 /* LaunchScreen.storyboard */; };
 		4AF1F5CF1E8799EA00E6A584 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4AF1F5C81E8799EA00E6A584 /* Info.plist */; };
 		4AF1F5D01E8799EA00E6A584 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF1F5C91E8799EA00E6A584 /* main.m */; };
-		4AF1F5EB1E879A7400E6A584 /* SLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF1F5E91E879A7400E6A584 /* SLController.m */; };
-		4AF1F5EE1E879A8500E6A584 /* SLTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF1F5ED1E879A8500E6A584 /* SLTableController.m */; };
 		4AF1F5F11E879BDF00E6A584 /* SLTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF1F5F01E879BDF00E6A584 /* SLTableCell.m */; };
 /* End PBXBuildFile section */
 
@@ -25,16 +24,15 @@
 		4AE04BC01E87ACD600294DCE /* SLTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLTestController.m; sourceTree = "<group>"; };
 		4AE04BC21E87B26D00294DCE /* UIViewController+test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+test.h"; sourceTree = "<group>"; };
 		4AE04BC31E87B26D00294DCE /* UIViewController+test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+test.m"; sourceTree = "<group>"; };
+		4AE04BC61E87B59100294DCE /* SLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLController.h; sourceTree = "<group>"; };
+		4AE04BC71E87B5FB00294DCE /* SLTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLTableController.h; sourceTree = "<group>"; };
+		4AE04BC81E87B5FB00294DCE /* SLTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLTableController.m; sourceTree = "<group>"; };
 		4AF1F5C11E8799EA00E6A584 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4AF1F5C21E8799EA00E6A584 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4AF1F5C31E8799EA00E6A584 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AF1F5C51E8799EA00E6A584 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4AF1F5C81E8799EA00E6A584 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AF1F5C91E8799EA00E6A584 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4AF1F5E81E879A7400E6A584 /* SLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLController.h; sourceTree = "<group>"; };
-		4AF1F5E91E879A7400E6A584 /* SLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLController.m; sourceTree = "<group>"; };
-		4AF1F5EC1E879A8500E6A584 /* SLTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLTableController.h; sourceTree = "<group>"; };
-		4AF1F5ED1E879A8500E6A584 /* SLTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLTableController.m; sourceTree = "<group>"; };
 		4AF1F5EF1E879BDF00E6A584 /* SLTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLTableCell.h; sourceTree = "<group>"; };
 		4AF1F5F01E879BDF00E6A584 /* SLTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLTableCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,8 +93,7 @@
 		4AF1F5C61E8799EA00E6A584 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4AF1F5E81E879A7400E6A584 /* SLController.h */,
-				4AF1F5E91E879A7400E6A584 /* SLController.m */,
+				4AE04BC61E87B59100294DCE /* SLController.h */,
 				4AF1F5EA1E879A7400E6A584 /* TableController */,
 			);
 			path = Controller;
@@ -105,8 +102,8 @@
 		4AF1F5EA1E879A7400E6A584 /* TableController */ = {
 			isa = PBXGroup;
 			children = (
-				4AF1F5EC1E879A8500E6A584 /* SLTableController.h */,
-				4AF1F5ED1E879A8500E6A584 /* SLTableController.m */,
+				4AE04BC71E87B5FB00294DCE /* SLTableController.h */,
+				4AE04BC81E87B5FB00294DCE /* SLTableController.m */,
 				4AF1F5EF1E879BDF00E6A584 /* SLTableCell.h */,
 				4AF1F5F01E879BDF00E6A584 /* SLTableCell.m */,
 			);
@@ -186,11 +183,10 @@
 			files = (
 				4AE04BC41E87B26D00294DCE /* UIViewController+test.m in Sources */,
 				4AF1F5F11E879BDF00E6A584 /* SLTableCell.m in Sources */,
-				4AF1F5EB1E879A7400E6A584 /* SLController.m in Sources */,
-				4AF1F5EE1E879A8500E6A584 /* SLTableController.m in Sources */,
 				4AF1F5D01E8799EA00E6A584 /* main.m in Sources */,
 				4AE04BC11E87ACD600294DCE /* SLTestController.m in Sources */,
 				4AF1F5CC1E8799EA00E6A584 /* AppDelegate.m in Sources */,
+				4AE04BC91E87B5FB00294DCE /* SLTableController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

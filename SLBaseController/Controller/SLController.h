@@ -6,9 +6,9 @@
 //  Copyright © 2017年 Sylar. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@protocol SLControllerLiftCircle<NSObject>
+@protocol SLController <NSObject>
 
 @optional
 /**
@@ -20,9 +20,5 @@
  *  准备布局数据
  */
 - (void)sl_prepareLayoutArray;
-
-@end
-
-@interface SLController : UIViewController<SLControllerLiftCircle>
 
 @end
