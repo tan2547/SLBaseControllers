@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SLController.h"
+#import "SLControllerLifeCircle.h"
 #import "SLTableCell.h"
 @protocol SLTableLiftCircle <NSObject>
 
@@ -22,7 +22,7 @@
 
 @end
 
-@interface SLTableController : UITableViewController<SLController,SLTableLiftCircle>
+@interface SLTableController : UITableViewController<SLControllerLifeCircle,SLTableLiftCircle>
 
 /**
  *  布局数组
