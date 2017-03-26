@@ -17,15 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSLog(@"判断是否实现:sl_prepareSubView");
     if ([self respondsToSelector:@selector(sl_prepareSubView)]) {
-        NSLog(@"执行：sl_prepareSubView");
         [self sl_prepareSubView];
     }
     
-    NSLog(@"判断是否实现：sl_prepareLayoutArray");
     if ([self respondsToSelector:@selector(sl_prepareLayoutArray)]) {
-        NSLog(@"执行：sl_prepareLayoutArray");
         [self sl_prepareLayoutArray];
     }
 
