@@ -9,14 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface SLController : UIViewController
-/**
- *  准备布局数据
- */
-- (void)sl_prepareLayoutArray;
 
 /**
  *  准备子视图
  */
 - (void)sl_prepareSubView;
+
+/**
+ *  准备布局数据
+ */
+- (void)sl_prepareLayoutArray;
 
 @end

@@ -17,6 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    if ([self respondsToSelector:@selector(sl_prepareSubView)]) {
+        [self sl_prepareSubView];
+    }
+    
+    if ([self respondsToSelector:@selector(sl_prepareLayoutArray)]) {
+        [self sl_prepareLayoutArray];
+    }
+
 }
 
 - (void)didReceiveMemoryWarning {

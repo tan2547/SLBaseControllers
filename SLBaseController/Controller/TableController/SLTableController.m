@@ -18,10 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    if ([self respondsToSelector:@selector(prepareLayoutArray)]) {
-        [self prepareLayoutArray];
-    }
-    
+        
 }
 
 - (void)didReceiveMemoryWarning {
