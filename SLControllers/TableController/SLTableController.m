@@ -31,6 +31,10 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    [self registerCells];
+    [self setupHeaderAndFooter];
+    
     if ([self respondsToSelector:@selector(sl_prepareSubView)]) {
         [self sl_prepareSubView];
     }
@@ -42,11 +46,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void)sl_prepareSubView{
-    [self registerCells];
-    [self setupHeaderAndFooter];
 }
 
 - (void)registerCells{

@@ -31,6 +31,10 @@
 		4AE04C021E87D4EE00294DCE /* SLControllerLifeCircle.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE04BEC1E87D0F900294DCE /* SLControllerLifeCircle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4AE04C031E87D4F100294DCE /* SLTableController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE04BF11E87D0F900294DCE /* SLTableController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4AE04C041E87D4F500294DCE /* SLTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE04BEF1E87D0F900294DCE /* SLTableCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AE04C111E88B7B700294DCE /* SLCollectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE04C0F1E88B7B700294DCE /* SLCollectionController.h */; };
+		4AE04C121E88B7B700294DCE /* SLCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE04C101E88B7B700294DCE /* SLCollectionController.m */; };
+		4AE04C151E88B9B200294DCE /* SLCollectionCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE04C131E88B9B200294DCE /* SLCollectionCell.h */; };
+		4AE04C161E88B9B200294DCE /* SLCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE04C141E88B9B200294DCE /* SLCollectionCell.m */; };
 		4AF1F5CC1E8799EA00E6A584 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF1F5C21E8799EA00E6A584 /* AppDelegate.m */; };
 		4AF1F5CD1E8799EA00E6A584 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AF1F5C31E8799EA00E6A584 /* Assets.xcassets */; };
 		4AF1F5CE1E8799EA00E6A584 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AF1F5C41E8799EA00E6A584 /* LaunchScreen.storyboard */; };
@@ -76,6 +80,10 @@
 		4AE04BF21E87D0F900294DCE /* SLTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLTableController.m; sourceTree = "<group>"; };
 		4AE04BFA1E87D12200294DCE /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4AE04BFB1E87D12200294DCE /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4AE04C0F1E88B7B700294DCE /* SLCollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLCollectionController.h; sourceTree = "<group>"; };
+		4AE04C101E88B7B700294DCE /* SLCollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLCollectionController.m; sourceTree = "<group>"; };
+		4AE04C131E88B9B200294DCE /* SLCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLCollectionCell.h; sourceTree = "<group>"; };
+		4AE04C141E88B9B200294DCE /* SLCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLCollectionCell.m; sourceTree = "<group>"; };
 		4AF1F5C11E8799EA00E6A584 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4AF1F5C21E8799EA00E6A584 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4AF1F5C31E8799EA00E6A584 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -138,6 +146,7 @@
 				4AE04BEC1E87D0F900294DCE /* SLControllerLifeCircle.h */,
 				4AE04BED1E87D0F900294DCE /* SLControllers.h */,
 				4AE04BEE1E87D0F900294DCE /* TableController */,
+				4AE04C0E1E88B79C00294DCE /* CollectionController */,
 			);
 			name = SLControllers;
 			sourceTree = "<group>";
@@ -145,12 +154,23 @@
 		4AE04BEE1E87D0F900294DCE /* TableController */ = {
 			isa = PBXGroup;
 			children = (
-				4AE04BEF1E87D0F900294DCE /* SLTableCell.h */,
-				4AE04BF01E87D0F900294DCE /* SLTableCell.m */,
 				4AE04BF11E87D0F900294DCE /* SLTableController.h */,
 				4AE04BF21E87D0F900294DCE /* SLTableController.m */,
+				4AE04BEF1E87D0F900294DCE /* SLTableCell.h */,
+				4AE04BF01E87D0F900294DCE /* SLTableCell.m */,
 			);
 			path = TableController;
+			sourceTree = "<group>";
+		};
+		4AE04C0E1E88B79C00294DCE /* CollectionController */ = {
+			isa = PBXGroup;
+			children = (
+				4AE04C0F1E88B7B700294DCE /* SLCollectionController.h */,
+				4AE04C101E88B7B700294DCE /* SLCollectionController.m */,
+				4AE04C131E88B9B200294DCE /* SLCollectionCell.h */,
+				4AE04C141E88B9B200294DCE /* SLCollectionCell.m */,
+			);
+			path = CollectionController;
 			sourceTree = "<group>";
 		};
 		4AF1F5BF1E8799EA00E6A584 /* SLBaseController */ = {
@@ -185,8 +205,10 @@
 			files = (
 				4AE04C011E87D4EA00294DCE /* SLControllers.h in Headers */,
 				4AE04C021E87D4EE00294DCE /* SLControllerLifeCircle.h in Headers */,
+				4AE04C111E88B7B700294DCE /* SLCollectionController.h in Headers */,
 				4AE04C031E87D4F100294DCE /* SLTableController.h in Headers */,
 				4AE04C041E87D4F500294DCE /* SLTableCell.h in Headers */,
+				4AE04C151E88B9B200294DCE /* SLCollectionCell.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,8 +347,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AE04C161E88B9B200294DCE /* SLCollectionCell.m in Sources */,
 				4AE04BF71E87D0F900294DCE /* SLTableCell.m in Sources */,
 				4AE04BF91E87D0F900294DCE /* SLTableController.m in Sources */,
+				4AE04C121E88B7B700294DCE /* SLCollectionController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
