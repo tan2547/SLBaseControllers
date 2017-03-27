@@ -7,7 +7,7 @@
 //
 
 #import "SLCollectionController.h"
-
+static NSString const *kDefaultReuseID = @"SLCollectionCell";
 @interface SLCollectionController ()
 
 @end
@@ -18,7 +18,6 @@
     UICollectionViewFlowLayout *defaultLayout = [[UICollectionViewFlowLayout alloc]init];
     defaultLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
     defaultLayout.itemSize = CGSizeMake(80, 80);
-    
     if ([self respondsToSelector:@selector(sl_collectionDirection)]) {
         defaultLayout.scrollDirection = [self sl_collectionDirection];
     }
@@ -28,6 +27,10 @@
         return [super initWithCollectionViewLayout:layout];
     }
     return [super initWithCollectionViewLayout:defaultLayout];
+}
+
+- (instancetype)init{
+    return [self initWithCollectionViewLayout:[[UICollectionViewFlowLayout alloc]init]];
 }
 
 - (void)viewDidLoad {
@@ -47,6 +50,7 @@
     if ([self respondsToSelector:@selector(sl_prepareLayoutArray)]) {
         [self sl_prepareLayoutArray];
     }
+    self.collectionView.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -57,7 +61,8 @@
 #pragma mark - 注册cell
 - (void)registerCellsAndReuseViews{
     // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:NSStringFromClass([SLCollectionCell class])];
+    NSString *defaultid = [NSString stringWithFormat:@"%@",kDefaultReuseID];
+    [self.collectionView registerClass:[SLCollectionCell class] forCellWithReuseIdentifier:defaultid];
     
     if ([self respondsToSelector:@selector(sl_registerCollectionCell)]) {
         NSArray *array = [self sl_registerCollectionCell];
@@ -109,13 +114,13 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *reuseIdentifer = NSStringFromClass([SLCollectionCell class]);
+    NSString *reuseIdentifer = [NSString stringWithFormat:@"%@",kDefaultReuseID];
     if ([self respondsToSelector:@selector(sl_collectionCellReuseIdentiferAtIndexPath:)]) {
         reuseIdentifer = [self sl_collectionCellReuseIdentiferAtIndexPath:indexPath];
     }
-    SLCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifer forIndexPath:indexPath];
     NSMutableArray *sectionArray = [self.layoutArray objectAtIndex:indexPath.section];
     NSMutableDictionary *dic = [sectionArray objectAtIndex:indexPath.row];
+    SLCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifer forIndexPath:indexPath];
     [cell bindData:dic];
     if ([self respondsToSelector:@selector(sl_afterBindCollectionCell:atIndexPath:)]) {
         [self sl_afterBindCollectionCell:cell atIndexPath:indexPath];

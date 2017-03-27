@@ -24,27 +24,19 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (UIView *)sl_headerView{
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 300, 200)];
-    view.backgroundColor = [UIColor yellowColor];
-    return view;
-}
-
-- (UIView *)sl_footerView{
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 300, 200)];
-    view.backgroundColor = [UIColor blueColor];
-    return view;
-}
-
 - (void)sl_prepareLayoutArray{
     
     NSMutableArray *section = [NSMutableArray arrayWithCapacity:1];
-    for (int i = 0; i<10; i++) {
+    for (int i = 0; i<100; i++) {
         NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithCapacity:1];
         [dic setObject:@(i) forKey:@"value"];
         [section addObject:dic];
     }
     [self.layoutArray addObject:section];
     [self refreshController];
+}
+
+- (void)sl_afterBindCollectionCell:(SLCollectionCell *)cell atIndexPath:(NSIndexPath *)indexPath{
+    cell.backgroundColor = [UIColor colorWithRed:arc4random()%255/255.0 green:arc4random()%255/255.0 blue:arc4random()%255/255.0 alpha:1];
 }
 @end

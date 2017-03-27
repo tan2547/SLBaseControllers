@@ -6,8 +6,8 @@
 //  Copyright © 2017年 Sylar. All rights reserved.
 //
 
-#import "SLTableController.h"
-
-@interface ViewController : SLTableController
+//#import "SLTableController.h"
+#import "SLCollectionController.h"
+@interface ViewController : SLCollectionController
 
 @end
