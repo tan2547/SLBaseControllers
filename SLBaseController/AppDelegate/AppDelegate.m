@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "ListController.h"
+#import "CollectionController.h"
 @interface AppDelegate ()
 
 @end
@@ -19,14 +20,20 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];
-
-//    SLTestController *vc = [[SLTestController alloc]init];
-//    vc.view.backgroundColor = [UIColor whiteColor];
-    ViewController *vc = [[ViewController alloc]init];
-    [self.window setRootViewController:vc];
+    [self setupRootController];
     return YES;
 }
 
+- (void)setupRootController{
+    ListController *list = [[ListController alloc]init];
+    CollectionController *col = [[CollectionController alloc]init];
+    UINavigationController *nav1 = [[UINavigationController alloc]initWithRootViewController:list];
+    UINavigationController *nav2 = [[UINavigationController alloc]initWithRootViewController:col];
+    UITabBarController *tab = [[UITabBarController alloc]init];
+    NSMutableArray *controllers = [NSMutableArray arrayWithObjects:nav1,nav2, nil];
+    [tab setViewControllers:controllers];
+    [self.window setRootViewController:tab];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

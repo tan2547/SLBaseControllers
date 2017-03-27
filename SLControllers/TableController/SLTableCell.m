@@ -22,6 +22,5 @@
 }
 
 - (void)bindData:(NSMutableDictionary *)data{
-    NSLog(@"%@,绑定数据字典:%@",NSStringFromClass([self class]),data);
 }
 @end
