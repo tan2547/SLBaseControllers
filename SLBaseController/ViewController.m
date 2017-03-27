@@ -29,4 +29,22 @@
     view.backgroundColor = [UIColor yellowColor];
     return view;
 }
+
+- (UIView *)sl_footerView{
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 300, 200)];
+    view.backgroundColor = [UIColor blueColor];
+    return view;
+}
+
+- (void)sl_prepareLayoutArray{
+    
+    NSMutableArray *section = [NSMutableArray arrayWithCapacity:1];
+    for (int i = 0; i<10; i++) {
+        NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithCapacity:1];
+        [dic setObject:@(i) forKey:@"value"];
+        [section addObject:dic];
+    }
+    [self.layoutArray addObject:section];
+    [self refreshController];
+}
 @end

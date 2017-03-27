@@ -27,17 +27,13 @@
         layout = [self sl_layoutOfCollection];
         return [super initWithCollectionViewLayout:layout];
     }
-    return defaultLayout;
+    return [super initWithCollectionViewLayout:defaultLayout];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    self.layoutArray = [NSMutableArray arrayWithCapacity:1];
     
     // Do any additional setup after loading the view.
     
@@ -60,6 +56,9 @@
 
 #pragma mark - 注册cell
 - (void)registerCellsAndReuseViews{
+    // Register cell classes
+    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:NSStringFromClass([SLCollectionCell class])];
+    
     if ([self respondsToSelector:@selector(sl_registerCollectionCell)]) {
         NSArray *array = [self sl_registerCollectionCell];
         for (NSString *name in array) {
@@ -106,7 +105,7 @@
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return [self.layoutArray objectAtIndex:section];
+    return [[self.layoutArray objectAtIndex:section]count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -124,6 +123,9 @@
     return cell;
 }
 
+- (void)refreshController{
+    [self.collectionView reloadData];
+}
 
 #pragma mark <UICollectionViewDelegate>
 

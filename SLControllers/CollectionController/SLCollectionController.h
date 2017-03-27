@@ -11,6 +11,7 @@
 #import "SLCollectionCell.h"
 @protocol SLCollectionLiftCircle <NSObject>
 
+@optional
 - (NSArray<NSString*> *)sl_registerCollectionCell;
 - (NSArray<NSString*> *)sl_registerCollectionNibCell;
 - (NSArray<NSString*> *)sl_registerHeaderReuseView;
@@ -27,8 +28,6 @@
  *  @return 布局类
  */
 - (UICollectionViewLayout *)sl_layoutOfCollection;
-- (UIView *)sl_collection_headerView;
-- (UIView *)sl_collection_footerView;
 - (NSString *)sl_collectionCellReuseIdentiferAtIndexPath:(NSIndexPath *)indexPath;
 - (void)sl_afterBindCollectionCell:(SLCollectionCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 

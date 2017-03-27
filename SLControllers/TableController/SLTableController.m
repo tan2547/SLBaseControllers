@@ -26,11 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.layoutArray = [NSMutableArray arrayWithCapacity:1];
     
     [self registerCells];
     [self setupHeaderAndFooter];
@@ -49,6 +45,9 @@
 }
 
 - (void)registerCells{
+    Class class = [SLTableCell class];
+    [self.tableView registerClass:class forCellReuseIdentifier:NSStringFromClass(class)];
+    
     NSArray *array = nil;
     if ([self respondsToSelector:@selector(sl_registerCell)]) {
         array = [self sl_registerCell];
@@ -91,6 +90,9 @@
     NSMutableArray *sectionArray = [self.layoutArray objectAtIndex:indexPath.section];
     NSMutableDictionary *dic = [sectionArray objectAtIndex:indexPath.row];
     SLTableCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifer];
+    if (cell == nil) {
+        NSLog(@"cell空了");
+    }
     [cell bindData:dic];
     if ([self respondsToSelector:@selector(sl_afterBindDataCell:atIndexPath:)]) {
         [self sl_afterBindDataCell:cell atIndexPath:indexPath];
